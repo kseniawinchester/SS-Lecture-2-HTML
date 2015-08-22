@@ -3,9 +3,10 @@
 <head> 
  <meta charset="utf-8" />
  <title>Five Things You Should Know About HTML5 - Dive Into HTML5</title>
-</head>
+
 <body>
-  <body bgcolor="#FFFFFF" text="#000000" leftmargin="400"
+    
+     <body bgcolor="#FFFFFF" text="#000000" leftmargin="400"
   topmargin="20" marginwidth="300" marginheight="20">
   <big><p> 
     You are here:
@@ -15,13 +16,27 @@
     &#8227
   </p></big>
  <big><big>  <h1 align="center">
-    INTODUCTION:
+     <canvas id="myCanvas" width="300" height="300">
+Your user agent does not support the HTML5 Canvas element.
+</canvas>
+<script>
+var myCanvas = document.getElementById("myCanvas");
+var canvasContext = myCanvas.getContext("2d");
+canvasContext.fillRect(100, 100, 100, 100);
+</script>
+ INTODUCTION:
     <br>Five Things You Should Know 
     <br>About <abbr>HTML<sub>5</sub></abbr></h1>
     <br>
+      <p>The homework started at  <time>10:00</time>.</p>
+<p> It tooks place on <time datetime="2015-21-15 22:00">Summertime 2015</time>.</p>
+</br>
     </font></big></big>
     <font color="#B04F4F" size="4">
 <h4 align="center">
+    <menu>
+   <command onclick="alert('Read this book')" label="Try to be patient!">
+     </menu>
 <details>
 <summary>show/hide table of contents</summary>
              <nav id="table of content">
@@ -36,8 +51,15 @@
                           </h4></font>
                                       <h1> <br><div align="center">&#10087 </div>
 </h1>
-<img src="pics/video.png" alt="mock video player" align="right"  vspace="20" hspace="5">
 <a name="one">
+    <figrue>
+<img src="pics/video.png" alt="mock video player" align="right"  vspace="20" hspace="5">
+<img src="pics/video.png" alt="mock video player" align="right"  vspace="20" hspace="5">
+<figcapture>But you   can
+  detect support for individual features, like canvas, video, or geolocation.
+    
+</figcapture>
+</figure>
 <big><big> <div><h2>1. It’s not one big thing</h2></div></big></big>
 </a>
 <font size="4">
@@ -52,9 +74,9 @@
   <abbr>HTML5</abbr> specification also defines how those angle brackets interact with JavaScript, through the Document Object Model (
   <abbr>DOM</abbr>
   ). 
-  <abbr>HTML5</abbr> doesn’t just define a <<code>video</code>> tag; there is also a corresponding <abbr>DOM</abbr> <abbr>API</abbr>
+  <abbr>HTML5</abbr> doesn’t just define a <code>video</code> tag; there is also a corresponding <b><abbr>DOM</abbr></b> <abbr>API</abbr>
   to detect support for different video formats, play a video, pause, mute audio, track how much of the video has been downloaded, 
-  and everything else you need to build a rich user experience around the <<code>video</code>> tag itself.
+  and everything else you need to build a rich user experience around the <code>video</code> tag itself.
 </p>
 <p>
   <a href="http://diveintohtml5.info/detect.html">Chapter 2</a>
@@ -70,9 +92,9 @@
 </a>
 <img src="pics/forms.png" alt="sample form controls" align="left" vspace="20" hspace="5"> 
 <font size="4">
-<p>
-  Love it or hate it, you can’t deny that <abbr>HTML</abbr> 4 is the most successful markup format ever. 
-  <abbr>HTML5</abbr> builds on that success. You don’t need to throw away your existing markup. You don’t need to relearn things you already know. If your web application worked yesterday in 
+     <p>
+  Love it or hate it, you can’t deny that <abbr>HTML</abbr> 4 is the most successful <mark>markup</mark> format ever. 
+  <abbr>HTML5</abbr> builds on that success. You don’t need to throw away your existing <mark>markup</mark>. You don’t need to relearn things you already know. If your web application worked yesterday in 
   <abbr>HTML</abbr> 4, it will still work today in <abbr>HTML5</abbr>. Period.
 </p>
 <p>
@@ -108,7 +130,7 @@
  <<code>article></code>, 
  <<code>section</code>>,
  <<code>header</code>>, 
- and <<code>footer</code>>. You’ll learn all about these new elements in 
+ and <code>footer</code>. You’ll learn all about these new elements in 
  <a href="http://diveintohtml5.info/semantics.html">Chapter 3</a>
 </p>
 </font>>
@@ -116,7 +138,11 @@
  <big><big><div><h2> 4. It already works</h2>
  </div></big></big>
 </a>
-<img src="pics/rel-email.png" alt="form field with onscreen keyboard" align="left" vspace="20" hspace="5">
+<video align="left" vspace="20" hspace="5"
+     autoplay="autoplay"
+     controls="controls">
+<source src="https://www.youtube.com/watch?v=0ISbbcGBlC0" alt="Video about video">
+</video>
 <font size="4">
 <p>
  Whether you want to draw on a canvas, play video, design better forms, or build web applications 
@@ -144,12 +170,13 @@
  </p>
  </font>
  <a name="five">
+     
   <big><big><div><h2>5. It’s here to stay </h2>
    </div></big></big>
  </a>
  <font size="4">
  <p>
-   Tim Berners-Lee invented the world wide web in the early 1990s. 
+   <strong>Tim Berners-Lee </strong>invented the world wide web in the early 1990s. 
    He later founded the <abbr>W3C</abbr> to act as a steward of web standards, 
    which the organization has done for more than 15 years. Here is what the <abbr>W3C</abbr>
    had to say about the future of web standards, in July 2009:
@@ -185,7 +212,7 @@
              You’ll get a book, and I’ll get a buck. I do not currently accept direct donations.</p></font></td>
            </blockquote></td></tr>
          </table>
-         <p align="center">Copyright <abbr>MMIX–MMXI</abbr>
+         <small><p align="center">Copyright <abbr>MMIX–MMXI</abbr></small>
           <a href="http://diveintohtml5.info/about.html">Mark Pilgrim</a>
         </p>
         <div align="center">
@@ -194,5 +221,17 @@
           &nbsp;
           <input type="submit" name="sa" value="Search">
         </div>
+         <svg viewBox="0 0 400 200"
+           xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(50,100)" fill="black" font-size="3">
+          <text id="Text"> THE END))
+            <animateTransform attributeName="transform" attributeType="XML"
+                    type="scale" from="0" to="20" begin="0s" dur="10s"
+                    fill="freeze" />
+            <animate attributeName="opacity" attributeType="CSS"
+                     from="0" to="1" begin="0s" dur="10s" repeatCount="1" />
+          </text>
+        </g>
+      </svg>
       </body>
       </html>
